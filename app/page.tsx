@@ -44,10 +44,10 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="/demo"
+                  href="/app/dashboard"
                   className="inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-600/30 transition hover:bg-indigo-700"
                 >
-                  Launch demo portal
+                  Demo
                   <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
@@ -55,12 +55,6 @@ export default function Home() {
                   className="inline-flex items-center gap-2 rounded-lg border border-neutral-800 bg-neutral-900 px-5 py-3 text-sm font-semibold text-white transition hover:border-indigo-600/80 hover:bg-neutral-800"
                 >
                   Login
-                </Link>
-                <Link
-                  href="/signup"
-                  className="inline-flex items-center gap-2 rounded-lg border border-neutral-800 px-5 py-3 text-sm font-semibold text-white transition hover:border-indigo-600/80 hover:bg-neutral-900"
-                >
-                  Create account
                 </Link>
               </div>
             </div>

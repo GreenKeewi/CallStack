@@ -33,12 +33,6 @@ export default function DemoPage() {
             >
               Open app
             </Link>
-            <Link
-              href="/signup"
-              className="inline-flex items-center gap-2 rounded-lg border border-neutral-800 px-5 py-3 text-sm font-semibold text-white transition hover:border-indigo-600/80 hover:bg-neutral-900"
-            >
-              Create account
-            </Link>
           </div>
         </header>
 

@@ -84,39 +84,7 @@ export function AppShell({ children }: AppShellProps) {
             <span className="pill">role: {role}</span>
           </div>
           <div className="flex flex-wrap items-center gap-3">
-            <label className="flex items-center gap-2 text-sm text-neutral-300">
-              Tenant
-              <select
-                className="border border-neutral-800 bg-neutral-900 text-sm"
-                value={tenantId}
-                onChange={(event) => setTenantId(event.target.value)}
-              >
-                {tenants.map((tenant) => (
-                  <option key={tenant.id} value={tenant.id}>
-                    {tenant.name}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label className="flex items-center gap-2 text-sm text-neutral-300">
-              Role
-              <select
-                className="border border-neutral-800 bg-neutral-900 text-sm"
-                value={role}
-                onChange={(event) => setRole(event.target.value as typeof role)}
-              >
-                <option value="demo">Demo</option>
-                <option value="owner">Owner</option>
-                <option value="staff">Staff</option>
-              </select>
-            </label>
             <div className="ml-auto flex gap-2 text-sm">
-              <Link
-                href="/demo"
-                className="inline-flex items-center rounded-lg border border-neutral-800 px-3 py-2 font-semibold text-white transition hover:border-indigo-600/80 hover:bg-neutral-900"
-              >
-                Demo banner
-              </Link>
               <Link
                 href="/login"
                 className="inline-flex items-center rounded-lg bg-indigo-600 px-4 py-2 font-semibold text-white transition hover:bg-indigo-700"
